@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Products -  Ikojn Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/kenyan-logo.png" alt=" Ikojn Fashion" width="50" height="50">
+                <span> Ikojn Fashion</span>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="page-title">
+            <h1>Ikojn Fashion Fashion Products</h1>
+        </div>
+
+        <div class="filter-section">
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="showAll()">All Products</button>
+                <button class="filter-btn" onclick="showCategory('men')">Men's Wear</button>
+                <button class="filter-btn" onclick="showCategory('women')">Women's Wear</button>
+                <button class="filter-btn" onclick="showCategory('children')">Children's Wear</button>
+            </div>
+        </div>
+
+        <!-- Men's Products -->
+        <div class="products-section" id="men">
+            <h2>Men's Wear</h2>
+            <div class="product-grid">
+                <div class="product-card" data-category="men">
+                    <img src="images/men-casual.jpg" alt="Men's casual">
+                    <h3>Casual wear</h3>
+                    <p>Comfortable Casual set</p>
+                    <div class="product-price">KSh 7,500</div>
+                </div>
+                
+                <div class="product-card" data-category="men">
+                    <img src="images/men-sports-wear.jpg" alt="Track Suit">
+                    <h3>Sports wear</h3>
+                    <p>Track Suit</p>
+                    <div class="product-price">KSh 10,500</div>
+                </div>
+                
+                <div class="product-card" data-category="men">
+                    <img src="images/men-lounge-wear.jpg" alt="Lounge Set">
+                    <h3>Lounge Wear</h3>
+                    <p>Comfortable Lounge Set</p>
+                    <div class="product-price">KSh 11,800</div>
+                </div>
+                
+                <div class="product-card" data-category="men">
+                    <img src="images/men-outer-wear.jpg" alt="Outer Wear">
+                    <h3>Outer Wear</h3>
+                    <p> Warm Outer Wear outfit</p>
+                    <div class="product-price">KSh 6,200</div>
+                </div>
+                
+                <div class="product-card" data-category="men">
+                    <img src="images/men-office-wear.jpg" alt="Office Wear">
+                    <h3>Office Wear</h3>
+                    <p>Smart formal outfit for work</p>
+                    <div class="product-price">KSh 4,800</div>
+                </div>
+                
+                <div class="product-card" data-category="men">
+                    <img src="images/men-event-wear.jpg" alt="Event Wear">
+                    <h3>Event Wear</h3>
+                    <p>Elegant attire for special occasions</p>
+                    <div class="product-price">KSh 5,500</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Women's Products -->
+        <div class="products-section" id="women">
+            <h2>Women's Wear</h2>
+            <div class="product-grid">
+                <div class="product-card" data-category="women">
+                    <img src="images/women-casual.jpg" alt="Casual Wear">
+                    <h3>Casual Day Outfit</h3>
+                    <p>Relaxed everyday look</p>
+                    <div class="product-price">KSh 2,900</div>
+                </div>
+                
+                <div class="product-card" data-category="women">
+                   <img src="images/women-sports-wear.jpg" alt="Sports Wear">
+                   <h3>Sportswear Set</h3>
+                   <p>Comfortable and breathable</p>
+                   <div class="product-price">KSh 3,200</div>
+                </div>
+                
+                <div class="product-card" data-category="women">
+                     <img src="images/women-Lounge- Wear-Set.jpg" alt="Lounge Wear">
+                     <h3>Lounge Wear Set</h3>
+                     <p>Soft and cozy for indoors</p>
+                     <div class="product-price">KSh 2,700</div>
+                </div>
+                
+                <div class="product-card" data-category="women">
+                   <img src="images/women-Office-Formal-Wear.jpg" alt="Office Wear">
+                   <h3>Office Formal Wear</h3>
+                   <p>Smart professional look</p>
+                   <div class="product-price">KSh 3,800</div>
+                </div>
+                
+                <div class="product-card" data-category="women">
+                    <img src="images/women-trendy-street-wear.jpg" alt="Streetwear">
+                    <h3>Trendy Streetwear</h3>
+                    <p>Bold and urban fashion</p>
+                    <div class="product-price">KSh 3,500</div>
+                </div>
+                
+                <div class="product-card" data-category="women">
+                     <img src="images/women-event-gown.jpg" alt="Event Wear">
+                     <h3>Event Gown</h3>
+                     <p>Elegant dress for special occasions</p>
+                     <div class="product-price">KSh 5,000</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Children's Products -->
+        <div class="products-section" id="children">
+            <h2>Children's Wear</h2>
+            <div class="product-grid">
+                <div class="product-card" data-category="children">
+                    <img src="images/kids-Casual-Wear.jpg" alt="Kids Casual Wear">
+                    <h3>Casual Wear</h3>
+                    <p>Comfortable casual outfit</p>
+                    <div class="product-price">KSh 2,000</div>
+                </div>
+                
+                <div class="product-card" data-category="children">
+                    <img src="images/kids-Sports-Wear.jpg" alt="Kids Sportswear">
+                    <h3>Sports Wear</h3>
+                    <p>Sporty and flexible gear</p>
+                    <div class="product-price">KSh 2,500</div>
+                </div>
+                
+                <div class="product-card" data-category="children">
+                     <img src="images/kids-Lounge-Wear.jpg" alt="Kids Lounge Wear">
+                     <h3>Lounge Wear</h3>
+                     <p>Soft homewear set</p>
+                     <div class="product-price">KSh 1,800</div>
+                </div>
+                
+                <div class="product-card" data-category="children">
+                    <img src="images/kids-School-Wear.jpg" alt="Kids School Uniform">
+                    <h3>School Wear</h3>
+                    <p>Neat school uniform</p>
+                    <div class="product-price">KSh 2,200</div>
+                </div>
+                
+                <div class="product-card" data-category="children">
+                   <img src="images/kids-Party-Wear.jpg" alt="Kids Party Outfit">
+                   <h3>Party Wear</h3>
+                   <p>Colorful party outfit</p>
+                   <div class="product-price">KSh 2,800</div>
+                </div>
+                
+                <div class="product-card" data-category="children">
+                    <img src="images/kids-Cultural-Wear.jpg" alt="Kids Cultural Wear">
+                    <h3>Cultural Wear</h3>
+                    <p>Traditional print attire</p>
+                    <div class="product-price">KSh 2,400</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="images/kenyan-logo.jpg" alt="Ikojn Fashion Logo" class="logo-img">
+                        <span class="logo-text">Lemayan Fashion House</span>
+                    </div>
+                    <p>Best Kenyan Fashion in Nairobi. Proudly Kenyan Fashion for All.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#men">Men's Wear</a></li>
+                        <li><a href="#women">Women's Wear</a></li>
+                        <li><a href="#children">Children's Wear</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p>Muthangari Drive,Nairobi,Kenya</p>
+                        <p>+254 796 275 576</p>
+                        <p>info@ikojn.co.ke</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ikojn Fashion.Explore our diverse collection of fashion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
